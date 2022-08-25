@@ -13,7 +13,7 @@
 body {
   font-family: manrope;
   font-weight: 800;
-  font-size: 28px;
+  font-size: 26px;
   background-color: hsl(218deg, 23%, 16%);
 }
 
@@ -36,14 +36,17 @@ body {
   padding: 10px;
   text-align: center;
 }
+
 .advice-block__header {
   color: hsl(150deg, 100%, 66%);
   margin-top: 20px;
 }
+
 .advice-block__main {
   margin-top: 20px;
   color: hsl(193deg, 38%, 86%);
 }
+
 .advice-block .dice-btn {
   margin-left: -3px;
   margin-top: 65px;
@@ -53,19 +56,23 @@ body {
   border-radius: 50%;
   background-color: hsl(150deg, 100%, 66%);
 }
+
 .advice-block .dice-btn img {
   width: 30px;
   margin-top: 1px;
 }
+
 .advice-block .dice-btn:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px 5px 13px 15px rgba(82, 255, 168, 0.2);
   -moz-box-shadow: 0px 5px 13px 15px rgba(82, 255, 168, 0.2);
   box-shadow: 0px 5px 13px 15px rgba(82, 255, 168, 0.2);
 }
+
 .advice-block__bottom {
   height: 80px;
 }
+
 .advice-block__bottom::before {
   content: "";
   display: block;
@@ -74,6 +81,23 @@ body {
   height: 17px;
   width: 300px;
   margin-top: 10px;
+}
+
+@media screen and (min-width:1000px) {
+  .container {
+    width: 80%;
+  }
+
+  .advice-block {
+    width: 60%;
+  }
+
+  .advice-block__bottom::before {
+    background-image: url("../images/pattern-divider-desktop.svg");
+    background-repeat: no-repeat;
+    width: 600px;
+    right: 425px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
